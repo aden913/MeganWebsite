@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megan Almon</title>
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <p>This is a website to tell you about Megan Almon</p>
+    
+<nav>
+    <img src="your_logo.png" alt="Logo">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="collapsible">☰</button>
+    <div class="content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </nav>
+  
+  <script>
+    document.querySelector('.collapsible').addEventListener('click', function() {
+      var content = document.querySelector('.content');
+      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
 </body>
 </html>
