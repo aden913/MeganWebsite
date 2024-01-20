@@ -1,11 +1,24 @@
+html {background-color: #9F9E73;}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
   }
 
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+  }
+  
+
   nav {
-    background-color: #333;
+    background-color: #1C252D;
     overflow: hidden;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index:  1000;
+    margin-bottom: 6em;
   }
 
   nav img {
@@ -18,23 +31,28 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+   padding-right: 4em;
+    font-family: 'Bebas Neue';
+   
+    font-size: 2em;
   }
 
   nav li {
     float: left;
+    padding-left: 2em;
   }
 
   nav a {
     display: block;
-    color: white;
+    color: #5A6469;;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #1C252D;
+        color: #9F9E73;
   }
 
   .collapsible {
@@ -43,21 +61,80 @@ body {
     padding: 14px 16px;
     border: none;
     background-color: inherit;
-    font-size: 16px;
-    color: white;
+    font-size: 1em;
+    color: #5A6469;
   }
 
   .collapsible:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #1C252D;
+    color: #9F9E73;
   }
 
   .content {
     display: none;
     padding: 20px;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #1C252D;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+  }
+
+  .item-center {
+    flex-grow: 1; /* Allow item 2 to grow and take available space */
+    text-align: center;
+  }
+
+  .item {
+    padding: 20px;
+  }
+
+  section {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #1C252D;
+  }
+
+  .image-container {
+    flex: 1;
+    width:100%;
+  }
+  .scrolling-image {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50px); /* Initial position */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .scrolling-image.show {
+    opacity: 1; /* Visible when in viewport */
+    transform: translateY(0); /* Final position */
+  }
+
+  .image-container img {
+    width: 100%; /* Make the image fill its container */
+    height: auto;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    z-index: -1;
+  }
+
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    background-color: #1C252D;
+    width:100%;
+    margin-top:10em;    
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #ABC7DD; /* Set text color */
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #5A6469; /* Set text color */
   }

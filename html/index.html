@@ -5,30 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megan Almon</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../Media/Images/favicon.png" type="image/png">
+
 </head>
 <body>
     
 <nav>
-    <img src="your_logo.png" alt="Logo">
+    <img src="../Media/Images/logoAlmon.png" alt="Logo" class="item" id="logo">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="#FoxAndTheTurtle">Fox and the Turtle</a></li>
     </ul>
-    <button class="collapsible">☰</button>
+</nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const scrollingImage = document.querySelector(".scrolling-image");
+      
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                scrollingImage.classList.add("show");
+                observer.unobserve(entry.target);
+              }
+            });
+          });
+      
+          observer.observe(scrollingImage);
+        });
+      </script>
+    <!-- <button class="collapsible" style="padding: 20px;">☰</button>
     <div class="content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
-    </div>
-  </nav>
-  
+    </div> 
   <script>
     document.querySelector('.collapsible').addEventListener('click', function() {
       var content = document.querySelector('.content');
       content.style.display = (content.style.display === 'block') ? 'none' : 'block';
     });
   </script>
+-->
+ 
+  
+
+
+<section>
+  
+    <div class="text-container">
+      <h2>Megan Almon</h2>
+      <p>
+        Megan Almon, a former University of Georgia gymnast, was a part of UGA’s 2002 SEC Championship team. She worked as an award-winning journalist until 2008 when she decided to pursue a career speaking and teaching about Christian apologetics — especially in the area of bioethics. She began working with Life Training Institute in 2009 and was awarded an M.A. in Christian apologetics from Biola University in 2011. In 2023 she joined the speaking team at Apologetics, Inc. (formerly the C.S. Lewis Society). Megan and her husband, Tripp — Director of Summit Ministries Gap Year — have been married since 2003 and have two children, Neely and Rogan. Megan enjoys spending time with her family at home in Manitou Springs, Colorado, and is still known to practice handstands in her kitchen. She has spoken to high school-and-college assemblies and classrooms, youth organizations, women’s groups, pregnancy resource centers, congregations, and legislators across the nation on multiple topics including pro-life apologetics, bioethics, and beauty.
+      </p>
+
+    </div>
+    <div class="image-container">
+        <img src="../Media/Images/together bug.jpg" alt="Megan and her husband next to their buggy Rosco"  class="scrolling-image">
+      </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="#243">
+        <path d="M12 21l-12-18h24z"/>
+      </svg>    
+  </section>
+  
+
 </body>
 </html>
