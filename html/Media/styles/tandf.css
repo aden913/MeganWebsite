@@ -1,12 +1,33 @@
-html {background-color: #1C252D;}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+  }
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
   }
-
-  @font-face {
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  h1 {
     font-family: 'Bebas Neue';
-    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color */
+    text-align: center;
+    font-size: 4em; /* Adjust font size */
+    text-shadow: #1C252D .1em .1em;
   }
   
 
@@ -19,7 +40,6 @@ body {
     position: sticky;
     top: 0;
     z-index:  1000;
-    margin-bottom: 6em;
   }
 
   nav img {
@@ -87,62 +107,5 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-  .item-center {
-    flex-grow: 1; /* Allow item 2 to grow and take available space */
-    text-align: center;
-  }
 
-  .item {
-    padding: 20px;
-  }
 
-  section {
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh; /* Adjust the height as needed */
-    background-color: #1C252D;
-  }
-
-  .image-container {
-    flex: 1;
-    width:100%;
-  }
-  .scrolling-image {
-    opacity: 0; /* Initially invisible */
-    transform: translateY(50px); /* Initial position */
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .scrolling-image.show {
-    opacity: 1; /* Visible when in viewport */
-    transform: translateY(0); /* Final position */
-  }
-
-  .image-container img {
-    width: 100%; /* Make the image fill its container */
-    height: auto;
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
-    z-index: -1;
-  }
-
-  .text-container {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-    background-color: #1C252D;
-    width:100%;
-    margin-top:10em;    
-    max-width: 96.4%;
-  }
-
-  h2 {
-    font-size: 2em;
-    color: #ABC7DD; /* Set text color */
-  }
-
-  p {
-    font-size: 1.2em;
-    color: #5A6469; /* Set text color */
-  }

@@ -16,15 +16,36 @@ body {
     font-family: 'Bebas Neue';
     src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
+
+
+
   form {
     width: 300px;
   }
+
+  #form-container {
+    background-color: #1C252D;
+    border-radius: 6px;
+    width:40em;
+    position: relative;
+    display: block;
+  }
+
+  #contact-img { width:25em;
+    border-radius: 6px;
+    position: absolute;
+   top: 60%;
+   left: 80%;
+   transform: translate(-50%, -50%);
+  box-shadow: #1C252D .2em .2em 1em;}
 
   label {
     display: block;
     margin-bottom: 8px;
     font-family: 'Bebas Neue';
-
+    color:#BDB2A5;
+    margin-left: 2em;
+    margin-top: 1em;
   }
 
   input,
@@ -32,9 +53,10 @@ body {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
-    box-sizing: border-box;
+   
     background-color: #ABC7DD;
-
+    margin-left: 2em;
+    border-radius: 5px;
   }
 
   button {
@@ -43,8 +65,13 @@ body {
     border: none;
     cursor: pointer;
     font-family: 'Bebas Neue';
-
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border-radius: 5px;
   }
+
+
+
 
   nav {
     background-color: #1C252D;
@@ -123,3 +150,5 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+
+

@@ -3,56 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .dropdown-container {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #333;
-      padding: 10px;
-      color: #fff;
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      top: 100%; /* Position below the dropdown container */
-      right: 0;
-      background-color: #f9f9f9;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .dropdown-container:hover .dropdown {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="Media/styles/test.css">
+  <title>Contact Page</title>
 </head>
 <body>
 
-<div class="dropdown-container">
-  Click me
-  <div class="dropdown">
-    <a href="#">Item 1</a>
-    <a href="#">Item 2</a>
-    <a href="#">Item 3</a>
+<div class="contact-container">
+  <div class="headshot">
+    <img src="Media/Images/Megan headshot.jpeg" alt="Client Headshot">
+  </div>
+  <div class="contact-form">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 </div>
-
-<!-- Content goes here -->
 
 </body>
 </html>
