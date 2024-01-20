@@ -8,15 +8,24 @@
     <title>About</title>
 </head>
 <body>
-    <nav>
-        <img src="Media/Images/logoAlmon.png" alt="Logo" class="item" id="logo">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="#FoxAndTheTurtle">Fox and the Turtle</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a href="index.html"><img src="Media/Images/logoAlmon.png" alt="Logo" class="item" id="logo"></a>
+    <button class="collapsible" style="padding: 20px;">☰</button>
+    <div class="content">
+  <div class="orgContent">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#FoxAndTheTurtle">Fox and the Turtle</a>
+    </div>
+    </div> 
+</nav>
+<script>
+  document.querySelector('.collapsible').addEventListener('click', function() {
+    var content = document.querySelector('.content');
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+  });
+</script>
 
     <h2>Megan's Past Talks</h2>
     <h3>"The Case for Life"</h3>
