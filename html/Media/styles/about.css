@@ -5,6 +5,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    
   }
   section {
     display: flex;
@@ -13,7 +14,7 @@ body {
   }
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
 
   nav {
@@ -140,3 +141,7 @@ body {
     font-size: 4em; /* Adjust font size */
     text-shadow: #1C252D .1em .1em;
   }
+
+::-webkit-scrollbar {
+  width: 0; 
+}

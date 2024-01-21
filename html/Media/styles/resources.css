@@ -1,80 +1,10 @@
-html {background-color: #BDB2A5;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    
-  }
-  section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @font-face {
+html{background-color: #BDB2A5;}
+body{margin:0;}
+@font-face {
     font-family: 'Bebas Neue';
     src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
-
-
-
-  form {
-    width: 300px;
-  }
-
-  #form-container {
-    background-color: #1C252D;
-    border-radius: 6px;
-    width:40em;
-    position: relative;
-    display: block;
-  }
-
-  #contact-img { width:25em;
-    border-radius: 6px;
-    position: absolute;
-   top: 60%;
-   left: 80%;
-   transform: translate(-50%, -50%);
-  box-shadow: #1C252D .2em .2em 1em;}
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Bebas Neue';
-    color:#BDB2A5;
-    margin-left: 2em;
-    margin-top: 1em;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-   
-    background-color: #ABC7DD;
-    margin-left: 2em;
-    border-radius: 5px;
-  }
-
-  button {
-    background-color: #ABC7DD;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Bebas Neue';
-    margin-left: 2em;
-    margin-bottom: 1em;
-    border-radius: 5px;
-  }
-
-
-
-
-  nav {
+nav {
     background-color: #1C252D;
     overflow:visible;
     display:flex;
@@ -151,8 +81,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-
-
 ::-webkit-scrollbar {
-  width: 0; 
+    width: 0; 
+  }
+
+#flex {display: flex;}
+.column {
+    flex: 1;
+}
+h1 {text-align: center; font-family: 'Bebas Neue';}
+li {list-style: none;
+margin:1em;}
+a {
+    font-size: 1em;
+    text-decoration: none;
 }

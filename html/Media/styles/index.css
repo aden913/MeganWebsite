@@ -2,11 +2,12 @@ html {background-color: #1C252D;}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    
   }
 
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
   
 
@@ -19,7 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index:  1000;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
   }
 
   nav img {
@@ -146,3 +147,9 @@ body {
     font-size: 1.2em;
     color: #5A6469; /* Set text color */
   }
+
+  ::-webkit-scrollbar {
+    width: 0; 
+  }
+  
+

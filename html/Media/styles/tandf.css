@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../Media/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
 body {
     margin: 0;
+    
     font-family: 'Arial', sans-serif;
   }
   
@@ -109,3 +110,6 @@ body {
 }
 
 
+::-webkit-scrollbar {
+    width: 0; 
+  }
