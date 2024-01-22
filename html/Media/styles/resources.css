@@ -88,6 +88,7 @@ nav {
 #flex {display: flex;}
 .column {
     flex: 1;
+    word-wrap: break-word;
 }
 h1 {text-align: center; font-family: 'Bebas Neue';}
 li {list-style: none;
