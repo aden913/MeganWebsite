@@ -112,6 +112,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
+    
   }
   
   .section.active {
@@ -124,11 +125,7 @@ body {
     width: 100%;
   }
   
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+
   
   h1 {
     font-family: 'Bebas Neue';
@@ -140,6 +137,7 @@ body {
     text-align: center;
     font-size: 4em; /* Adjust font size */
     text-shadow: #1C252D .1em .1em;
+    font-size:3em;
   }
 
 ::-webkit-scrollbar {

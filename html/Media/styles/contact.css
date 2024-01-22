@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   @font-face {
     font-family: 'Bebas Neue';
     src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
@@ -27,7 +28,6 @@ body {
   #form-container {
     background-color: #1C252D;
     border-radius: 6px;
-    width:40em;
     position: relative;
     display: block;
   }
@@ -40,18 +40,20 @@ body {
    transform: translate(-50%, -50%);
   box-shadow: #1C252D .2em .2em 1em;}
 
+ 
+
   label {
     display: block;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     font-family: 'Bebas Neue';
     color:#BDB2A5;
-    margin-left: 2em;
-    margin-top: 1em;
+    padding-left: 2em;
+    padding-top: 1em;
   }
 
   input,
   textarea {
-    width: 100%;
+    width: 12em;
     padding: 8px;
     margin-bottom: 16px;
    
@@ -155,4 +157,30 @@ body {
 
 ::-webkit-scrollbar {
   width: 0; 
+}
+
+ /* Media query for mobile devices */
+ @media (max-width: 767px) {
+  #contact-img {
+    /* New styles for mobile devices */
+    position:unset; /* or any other positioning you want */
+    transform:none;
+    width:100%;
+  }
+  #mobile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #form-container {width:100%;}
+  form{width:100%;}
+  button {position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;}
+    input,
+    textarea {
+      width: 70%;
+    }
 }

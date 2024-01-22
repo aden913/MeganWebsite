@@ -113,3 +113,5 @@ body {
 ::-webkit-scrollbar {
     width: 0; 
   }
+
+  @media (max-width: 767px) {h1{font-size: 3em;}}
