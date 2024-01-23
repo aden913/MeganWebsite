@@ -9,7 +9,11 @@ body {
     font-family: 'Bebas Neue';
     src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
   }
-  
+  @font-face {
+    font-family: 'quicksand';
+    src: url('../fonts/quicksand/Quicksand-Regular.otf')
+  }
+p{font-family: 'quicksand';}
 
   nav {
     background-color: #1C252D;

@@ -3,31 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Media/styles/test.css">
-  <title>Contact Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .accordion-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px; /* Add margin for spacing between items */
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-content {
+      padding: 10px;
+      display: none;
+    }
+
+    .accordion-content p {
+      margin: 0;
+    }
+  </style>
+  <title>Accordion with Spacing</title>
 </head>
 <body>
 
-<div class="contact-container">
-  <div class="headshot">
-    <img src="Media/Images/Megan headshot.jpeg" alt="Client Headshot">
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-button" onclick="toggleAccordion(1)">
+      Section 1
+      <span>&#9660;</span>
+    </div>
+    <div class="accordion-content">
+      <p>Content for section 1 goes here.</p>
+    </div>
   </div>
-  <div class="contact-form">
-    <h1>Contact Us</h1>
-    <form action="#" method="post">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  
+  <div class="accordion-item">
+    <div class="accordion-button" onclick="toggleAccordion(2)">
+      Section 2
+      <span>&#9660;</span>
+    </div>
+    <div class="accordion-content">
+      <p>Content for section 2 goes here.</p>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <div class="accordion-button" onclick="toggleAccordion(3)">
+      Section 3
+      <span>&#9660;</span>
+    </div>
+    <div class="accordion-content">
+      <p>Content for section 3 goes here.</p>
+    </div>
   </div>
 </div>
+
+<script>
+  function toggleAccordion(section) {
+    const content = document.querySelector(`.accordion-item:nth-child(${section}) .accordion-content`);
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
 
 </body>
 </html>
