@@ -156,3 +156,37 @@ a {
   .accordion-content p {
     margin: 0;
   }
+
+
+
+
+
+
+  .resource {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .resource img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+
+  .resource a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .resource-title {
+    flex: 1;
+  }
+  .resourceIMG {
+    padding-right: 1em;
+  }
+
+  .iconImage {
+    width: 3em;
+  }

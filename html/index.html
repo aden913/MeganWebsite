@@ -25,6 +25,8 @@
 </nav>
 
     <script>
+
+
         document.addEventListener("DOMContentLoaded", function () {
           const scrollingImage = document.querySelector(".scrolling-image");
       
@@ -39,6 +41,37 @@
       
           observer.observe(scrollingImage);
         });
+
+        
+        let currentSlide = 1;
+
+        function showSlide(n) {
+  const slides = document.getElementsByClassName('quote-slide');
+  
+  if (n > slides.length) {
+    currentSlide = 1;
+  }
+
+  if (n < 1) {
+    currentSlide = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  slides[currentSlide - 1].style.display = 'block';
+}
+
+function nextSlide() {
+  showSlide(currentSlide += 1);
+}
+
+// Initial display
+document.addEventListener("DOMContentLoaded", function () {
+  showSlide(currentSlide);
+});
+
       </script>
     
   <script>
@@ -67,7 +100,43 @@
   </section>
 
   
+<h2 id="endorseh2">Endorsements</h2>
+
+<div class="slideshow-container">
+  <div class="quote-slide" id="slide1">
+    <p class="quote">"I’d have to say that Megan is a first-rank communicator. Not only does she carry a solid knowledge base in ethics, philosophy, theology, Bible, and science, but she can integrate it all and communicate it all like a pro. On top of that she has a wonderful stage presence — authentic and exciting — and knows how to read an audience. I found her talks very interesting and engaging, and at the same time sensitive and full of life. She has what it takes to communicate pro-life issues and apologetics to everyone from junior high students to university academics. She is one of the best big-platform speakers I’ve seen in a long time."<br>Craig J. Hazen, Ph.D</p>
+  </div>
+
+  <div class="quote-slide" id="slide2">
+    <p class="quote">“Megan is a polished and professional presenter and her presentation had quite an impact on our school. I will try to give some sense of just how powerful and on target her presentation was. First the comments.&nbsp; Many students said it was the best presentation we had offered in their four years at Divine Child.&nbsp; Teachers complemented me on bringing in such a polished and effective speaker.&nbsp; My principal said that in his fourteen years of being in Catholic education it was the best he had seen. Students were particularly impressed by the way Megan presented a logical case for the pro-life position.&nbsp; Many students said it “just made sense to them.” after hearing her speak.&nbsp; Students also liked the fact that she strongly disagreed with the pro-choice position without demonizing those who might hold it.&nbsp; She reminded the students several times that there are real human beings, hurting human beings, on all sides of the issue.&nbsp; Megan even reached some of our most aloof students whose favorite answer is usually the opposite of whatever the Church teaches. After presenting for two hours straight Megan then took questions from a group of students who stayed behind.&nbsp; The ease with which she answered these students questions, some of which were very difficult, and the deep level of knowledge that she displayed while doing so was very impressive.&nbsp; Some people are good at delivering a presentation, others at responding on the fly.&nbsp; There are very few people who can do both really well.&nbsp; Megan is one of those. Megan even spent time in some of our classrooms later in the day.&nbsp; This was really an unexpected bonus.&nbsp; It was also very gracious of her after an already long day. I would tell anyone who is thinking of inviting Megan into their school to do it.&nbsp; Don’t hesitate.&nbsp; Get her on your calendar as soon as you can.&nbsp; It will be one of the best decisions you will make this year.&nbsp; You will get a professional, lively, smart presentation.&nbsp; You will get a presenter who is fluent in logic, philosophy, and science when presenting the case for life but also one who always keeps Christ unambiguously at the center.&nbsp; We were blessed to be able to get Megan Almon to speak to our school.”<br>
+											Marc Sierra</p>
+  </div>
+
+  <div class="quote-slide" id="slide3">
+    <p class="quote">“The chapel presentation by Megan Almon was all we had hoped for and more. She did a masterful job presenting the very thought provoking and biblically clear position on the value of life from the beginning. Not only was the chapel a special time, but Megan made herself available to classes afterward to allow students to ask questions and learn more. I heard nothing but appreciation and positive comments about her engaging way of interacting with our&nbsp;high school &nbsp;students. I firmly believe our students and staff are in a much better position to talk in a reasoned way about the issue of &nbsp; &nbsp; who the unborn really is and the implications that flow from that issue. Thanks again for your help. I would encourage other schools to consider the opportunity to prepare young people to intelligently and gracefully express a position that honors life and the God who creates it from that very first cell.”<br>Len McWilliams</p>
+</div>
+
+<div class="quote-slide" id="slide4">
+  <p class="quote"><p>“Megan did OUTSTANDING.</p>Let me fill ya in why I say so. Of course she covered the issue and apologetics with excellence, but she also painted such a beautiful picture of God and the Gospel! I have been ministering to a guy name Jesse. He is a great guy. Unreal guitarist. He’s lost. He had a Meth addiction and he looks like Jack Sparrow. No joke. I’ve been helping Jim and his dad. Mowing their yard and just serving them. Last night he said “I want to go to that Bible study thing.” It had been 25 years since he had been in church. I almost told him to come another night because of the “pro-life” talk. But I’m so glad God did not let me listen to my stupid side (yeah I have one). He came and was blown away with her graciousness and yet boldness. We had great conversations afterwards and he is coming back with me this Sunday. Amazing!!! The picture she painted and the power of her ideas about a persons value because of their divine spark was so empowering to him. Well done!!!! I did not get to talk with her as she was crowded with admirers. I went off with Jesse and discussed the evening. Please tell her about this story. God really used her!”<br>Tony Nolan</p></div>
+
+  <div class="quote-slide" id="slide5">
+    <p class="quote">“I couldn’t be more happy or impressed with Megan Almon and the people at LTI. Megan was beyond professional, prepared, polished and yet extremely relational. The issue of abortion is arguably the greatest issue of our time and I’m convinced the church can never be too prepared for these conversations. Equipping students with the knowledge of science, philosophy and the gospel is the least we can do to help them engage a world that desperately needs Jesus and practical pro-life truth. Megan is a person that does that as well as anybody. I take great seriousness in the&nbsp;people who address our students. Without question, Megan&nbsp;is the real deal and I would not hesitate to have her back.”<br>Shane Ecklund</p></div>
+
+    <div class="quote-slide" id="slide6">
+      <p class="quote">“Megan did an excellent job.&nbsp; She connected with our students and held their attention.&nbsp; Chapel is sometimes a tough gig because the students are required to be there.&nbsp; She kept their attention.&nbsp; Her approach to the difficult subject was thoughtful and challenging.&nbsp; She did not use an emotional approach to the subject of abortion.&nbsp; She used a very logical, thoughtful, and challenging approach which I really liked. I was somewhat nervous about the video. At first I did not want her to show it because I was afraid of a negative response.&nbsp; We talked and after she explained how she was going to use it, I agreed to let her show it. IT worked out fine and I did&nbsp; not receive any negative response from the video.&nbsp; Megan told me that there were other speakers who travel and speak on the subject of life.&nbsp; I want to use someone next year who speaks from the same perspective as Megan. I was very pleased and want to stay in touvh as she moves west….<p>Thanks for all you do to educate students on this subject.”<br>George Loutherback</p></p></div>
+
+      <div class="quote-slide" id="slide7">
+        <p class="quote">“Our thanks to Megan, you, and Life Training Institute!&nbsp; I thought the presentation was terrific!&nbsp; She engaged with students wonderfully with down-to-earth explanation of sophisticated and often emotionally-charged ideas, made accessible through lively story-telling, clear examples, compelling logic, and gentle humor. &nbsp;&nbsp;Megan was gracious in her delivery, respectful of the time constraints that shaped the event, and very kind to make herself available after the presentation to answer individual questions.&nbsp; &nbsp;&nbsp;Her tone was refreshing, sincere, winning.&nbsp; I’m sure you must be very proud of her ministry!”<br>Brother Tom</p></div>
+
+        <div class="quote-slide" id="slide8">
+          <p class="quote">“Megan was terrific. She held the students’ attention throughout the presentation and really was an excellent speaker. Attached are a couple of pictures. She had a really good after talk session with several students. They sensed her knowledge and understanding of the subject and they were truly intrigued. “<br>Sharon Masterson</p></div>
+    
+  </div>
+  <img class="nav-btn" src="Media/Images/button.png" alt="Next" onclick="nextSlide()">
   
+
+  <div id="content"></div>
+
 
 </body>
 </html>
