@@ -12,80 +12,75 @@
         <a href="https://meganalmon.com"><img src="Media/Images/logoAlmon.png" alt="Logo" class="item" id="logo"></a>
         <button class="collapsible" style="padding: 20px;">☰</button>
         <div class="content">
-      <div class="orgContent">
-        <a href="https://meganalmon.com">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="resources.html">Resources</a>
-        <a href="tandf.html">Fox and the Turtle</a>
-        </div>
+            <div class="orgContent">
+                <a href="https://meganalmon.com">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="resources.html">Resources</a>
+                <a href="tandf.html">Fox and the Turtle</a>
+            </div>
         </div> 
-      </nav>
-      <script>
+    </nav>
+    <script>
         document.querySelector('.collapsible').addEventListener('click', function() {
-          var content = document.querySelector('.content');
-          content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            var content = document.querySelector('.content');
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
         });
-      </script>
-<div id="logo-container">
-<img src="Media/Images/Resources.png" alt="Logo of resources" id="resource-logo">
-</div>
+    </script>
+    <div id="logo-container">
+        <img src="Media/Images/Resources.png" alt="Logo of resources" id="resource-logo">
+    </div>
 
-
-
-
-<div class="accordion">
-    <div class="accordion-item">
-      <div class="accordion-button" onclick="toggleAccordion(1)">
-        Articles
-        <span>&#9660;</span>
-      </div>
-      <div class="accordion-content">
-
-        <div class="resource">
-          <div class="resourceIMG">
-            <img src="Media/Images/article.png" class="iconImage"></div>
-          <div class="resource-title">
-            <a href="https://www.equip.org/articles/seeing-red-the-handmaids-tale-human-dignity-and-hope/" target="_blank">Seeing Red:</a>
-            <p>Description or additional information about Resource 1.</p>
-          </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-button" onclick="toggleAccordion(1)">
+                Articles
+                <span>&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <div class="resource">
+                    <div class="resourceIMG">
+                        <img src="Media/Images/article.png" class="iconImage">
+                    </div>
+                    <div class="resource-title">
+                        <a href="https://www.equip.org/articles/seeing-red-the-handmaids-tale-human-dignity-and-hope/" target="_blank">Seeing Red:</a>
+                        <p>Description or additional information about Resource 1.</p>
+                    </div>
+                </div>
+                <div class="resource">
+                    <div class="resourceIMG">
+                        <img src="Media/Images/article.png" class="iconImage">
+                    </div>
+                    <div class="resource-title">
+                        <a href="http://theresurgencereport.com/resurgence/authors/megan-almon" target="_blank">Resurgence's Biography</a>
+                        <p>Description or additional information about Resource 1.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- CHANGE THE ICONS FOR THE ITEMS -->
+    </div>
+
+    <div id="videos">
+        
+            <iframe class="video" src="https://www.youtube.com/embed/RENLW4W4A_I" frameborder="0" allowfullscreen></iframe>
+         
        
-        <div class="resource">
-          <div class="resourceIMG">
-         <img src="Media/Images/article.png" class="iconImage"></div>
-          <div class="resource-title">
-            <a href="http://theresurgencereport.com/resurgence/authors/megan-almon" target="_blank">Resurgence's Biography</a>
-            <p>Description or additional information about Resource 1.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CHANGE THE ICONS FOR THE ITEMS -->
+            <iframe class="video" src="https://www.youtube.com/embed/vxX1hLg3OKg" frameborder="0" allowfullscreen></iframe>
+     
+            <iframe class="video" src="https://www.youtube.com/embed/3VY_t8bg9Ms" frameborder="0" allowfullscreen></iframe>
         
-        
-      </div>
+            <iframe class="video" src="https://www.youtube.com/embed/RENLW4W4A_I" frameborder="0" allowfullscreen></iframe>
+      
+            <iframe class="video" src="https://player.vimeo.com/video/637722567" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+ 
     </div>
-  </div>
 
-
-  <div id="videos">
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RENLW4W4A_I" frameborder="0" allowfullscreen></iframe>
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vxX1hLg3OKg" frameborder="0" allowfullscreen></iframe>
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3VY_t8bg9Ms" frameborder="0" allowfullscreen></iframe>
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RENLW4W4A_I" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://player.vimeo.com/video/637722567" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
-  </div>
-
-
-
-  <script>
-    function toggleAccordion(section) {
-      const content = document.querySelector(`.accordion-item:nth-child(${section}) .accordion-content`);
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
+    <script>
+        function toggleAccordion(section) {
+            const content = document.querySelector(`.accordion-item:nth-child(${section}) .accordion-content`);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>

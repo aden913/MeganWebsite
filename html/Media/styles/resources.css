@@ -108,7 +108,13 @@ a {
 
 @media (max-width: 767px) {
     #flex{flex-direction: column;}
+ 
+  
+    
+    
+    
 }
+
 #resource-logo {
     width:16em;
 }
