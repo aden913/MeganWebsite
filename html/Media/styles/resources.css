@@ -190,3 +190,13 @@ a {
   .iconImage {
     width: 3em;
   }
+
+  #videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .video {
+    margin: 1em;
+  }
